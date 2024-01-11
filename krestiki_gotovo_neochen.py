@@ -12,7 +12,7 @@ def make_move(marker, position):
 print(board)
 
 def correct_move(position):
-    if position < 1 or position > len(board):
+    if position < 0 or position > len(board):            #позже хочу сделать position < 1, чтобы игрок вводил не 0, а начинал с 1, нужно где-то -1 добавить, пока не знаю где
         print("Некорректный ход, выбирайте от 1 до 9")
         return False
     if board[i] != ' ':                                   #Тут нужна помощь
